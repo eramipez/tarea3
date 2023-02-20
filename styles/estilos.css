@@ -1,0 +1,65 @@
+html {
+ background-color: green;
+ font-size: 20px;
+}
+ul {
+ background: red;
+ padding: 10px;
+ border: 1px solid black;
+}
+li {
+ margin-left: 20px;
+}
+
+blockquote {
+    margin: 0;
+}
+
+blockquote p {
+    padding: 15px;
+    background: #eee;
+    border-radius: 5px;
+}
+
+blockquote p::before {
+    content: '\201C';
+}
+
+blockquote p::after {
+    content: '\201D';
+}
+
+abbr {
+    font-style: italic;
+    color: chocolate;
+}
+
+a[href^='mail']::before {
+    content: '📧 ';
+}
+
+a[href^='cel']::before {
+    content: '📞 ';
+}
+
+code {
+    background-color: #eee;
+    border-radius: 3px;
+    font-family: courier, monospace;
+    padding: 0 3px;
+}
+
+kbd {
+    background-color: #eee;
+    border-radius: 3px;
+    border: 1px solid #b4b4b4;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2), 0 2px 0 0 rgba(255, 255, 255, 0.7) inset;
+    color: #333;
+    display: inline-block;
+    font-size: 0.85em;
+    font-weight: 700;
+    line-height: 1;
+    padding: 2px 4px;
+    white-space: nowrap;
+}
+
